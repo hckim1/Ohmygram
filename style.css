@@ -75,3 +75,11 @@ body{
     margin: 0 10px;
     display: inline-block;
 }
+
+.user-profile{
+    width: 35px;
+    border-radius: 50%;
+    background-image: url(img/profile-pic.png);
+    background-size: cover;
+    
+}
