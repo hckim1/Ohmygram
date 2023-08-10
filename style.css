@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*:focus{
+*:focus {
     outline: none;
 
 }
 
-body{
+body {
     width: 100%;
     background: #fafafa;
     position: relative;
     font-family: 'roboto', sans-serif;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     Left: 0;
@@ -31,8 +31,8 @@ body{
     padding: 5px 0;
 }
 
-.nav-wrapper{
-    width:70%;
+.nav-wrapper {
+    width: 70%;
     max-width: 1000px;
     height: 100%;
     display: flex;
@@ -40,13 +40,13 @@ body{
     align-items: center;
 }
 
-.brand-img{
+.brand-img {
     height: 100%;
     margin-top: 5px;
 
 }
 
-.search-box{
+.search-box {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -60,31 +60,31 @@ body{
     text-transform: capitalize;
 }
 
-.search-box::placeholder{
+.search-box::placeholder {
     color: rgba(0, 0, 0, 5);
 }
 
-.nav-items{
+.nav-items {
     height: 22px;
     position: relative;
 }
 
-.icon{
+.icon {
     height: 100%;
     cursor: pointer;
     margin: 0 10px;
     display: inline-block;
 }
 
-.user-profile{
+.user-profile {
     width: 35px;
     border-radius: 50%;
     background-image: url(img/profile-pic.png);
     background-size: cover;
-    
+
 }
 
-.main{
+.main {
     width: 100%;
     padding: 40px 0;
     display: flex;
@@ -93,30 +93,16 @@ body{
 
 }
 
-.wrapper{
+.wrapper {
     width: 70%;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 30px;
 }
-.left-col{
-    display: flex;
-    flex-direction: column;
-}
 
-.status-wrapper{
-    width: 100%;
-    height: 120px;
-    background: #fff;
-    border: 1px solid #dfdfdf;
-    border-radius: 2px;
-    padding: 10px;
-    padding-right: 0;
-    display: flex;
-    align-items: center;
-}
-.main{
+
+.main {
     width: 100%;
     padding: 40px 0;
     display: flex;
@@ -124,7 +110,7 @@ body{
     margin-top: 50px;
 }
 
-.wrapper{
+.wrapper {
     width: 70%;
     max-width: 1000px;
     display: grid;
@@ -132,14 +118,14 @@ body{
     grid-gap: 30px;
 }
 
-.left-col{
+.left-col {
     display: flex;
     flex-direction: column;
 }
 
-.status-wrapper{
-    width: 100%;
-    height: 120px;
+.status-wrapper {
+    width: 980px;
+    height: 100px;
     background: #fff;
     border: 1px solid #dfdfdf;
     border-radius: 2px;
@@ -149,13 +135,17 @@ body{
     align-items: center;
     overflow: hidden;
     overflow-x: auto;
+    margin: 8px 10px 0px auto;
+    justify-content: space-evenly
+    
 }
 
-.status-wrapper::-webkit-scrollbar{
+.status-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-.status-card{
+
+.status-card {
     flex: 0 0 auto;
     width: 80px;
     max-width: 80px;
@@ -165,7 +155,7 @@ body{
     margin-right: 15px;
 }
 
-.profile-pic{
+.profile-pic {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -174,7 +164,7 @@ body{
     background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
 }
 
-.profile-pic img{
+.profile-pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -182,11 +172,89 @@ body{
     border: 2px solid #fff;
 }
 
-.username{
+.username {
     width: 100%;
     overflow: hidden;
     text-align: center;
     font-size: 12px;
-    margin-top:5px;
+    margin-top: 5px;
     color: rgba(0, 0, 0, 0.5)
+}
+
+/* 여기서부터 수민님 css */
+
+.fir_container {
+    margin: 70px auto 0px auto;
+    width: 980px;
+    height: 70px;
+    border: 2px solid #dfdfdf;
+    display: table;
+    table-layout: fixed;
+
+
+}
+
+/* 부모태그에 display : table을 선언해 주고!
+                    table-layout: fixed
+            자식태그에 display : table-cell을 선언해주면
+            갯수가 몇개가 되든 동일한 간격으로 영역 가지게 됩니다 */
+.header_id {
+
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px 0px 5px 40px;
+    /* =>모든게 안에서부터 늘어나기에 가능 */
+    /* margin : 15px; /*은 아무 효과 없음 -> 이미 바깥여유공간이 없어 꽉차있기때문에 1번쨰 박스에  */
+    /* 이렇게 해버리면 전체칸을 하나로 인식하여 앞에 마진을 띄어줄수 없다. */
+
+    /* width: max-content; */
+    /* 글자 크기에 박스를 맞춰주는것 */
+    /* https://www.daleseo.com/css-width/ */
+    /* flex관련문서 : https://heropy.blog/2018/11/24/css-flexible-box/ */
+    /* flex and grid 관련 : https://studiomeal.com/archives/197 */
+}
+
+.sec_container {
+
+    margin: 0px auto 0px auto;
+    width: 980px;
+    height: 240px;
+
+    border: 2px solid #dfdfdf;
+    background: #fff
+}
+
+.profile_name {
+    /* background-color: black; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+
+}
+
+.profile_name>img {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto 10px 40px;
+    padding: 3px;
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.name {
+    width: max-content;
+    padding-left: 40px;
+    /* background-color: green; */
+    text-align: center;
+    word-break: break-all;
+    /* 박스 크기에 넘어가면 알아서 및으로 내려가주는거 */
+
+}
+
+.name>h1 {
+    font-weight: bold;
 }
