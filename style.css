@@ -258,3 +258,29 @@ body {
 .name>h1 {
     font-weight: bold;
 }
+
+.gesi_group {
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* 사이 공간의 너비를 같게 */
+    margin: 180px 470px 50px 470px;
+    /* 뱌로 위 status wrapper를 div로 인식 못하는 건지 붙어 나와서
+    일단은 margin_top을 넉넉하게 잡음 */
+}
+
+.gesi_group2 {
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 470px 50px 470px;
+}
+
+
+.card-img-top {
+    width: 288px;
+    cursor: pointer;
+    /* 커서를 올리면 마우스 포인터가 손가락 모양으로 바뀜 */
+}
