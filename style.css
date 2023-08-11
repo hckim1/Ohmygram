@@ -372,4 +372,49 @@ body {
     /* justify-content: center; */
     /* margin-right: 15px; */
 }
+
+.gesi_group {
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* 사이 공간의 너비를 같게 */
+    margin: 50px 0px 50px 0px;
+    /* 바로 위 status wrapper를 div로 인식 못하는 건지 붙어 나와서
+    일단은 margin_top을 넉넉하게 잡음
+    수민님 수정 후 wholewrap에 제대로 포함되어짐 */
+}
+
+.gesi_group2 {
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0px 50px 0px;
+}
+
+
+.card-img-top {
+    width: 288px;
+    cursor: pointer;
+    /* 커서를 올리면 마우스 포인터가 손가락 모양으로 바뀜 */
+}
+
+input.img-button {
+    background: url("img/like.PNG") no-repeat;
+    background-size: contain;
+    /* background-size: cover; 지정한 요소를 다 덮도록 배경이미지를 확대/축소 
+       background-size: contain; 지정한 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소*/
+    width: 23px;
+    height: 23px;
+    border: none;
+  }
+
+  input.commentbtn {
+    background: url("img/comment.PNG") no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    border: none;
+  }
 </style>
