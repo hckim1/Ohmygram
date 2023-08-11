@@ -30,9 +30,25 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px 0;
-    z-index: 1;
+    z-index: 1; 
     /* 맨위로 요소 올려줌, https://aboooks.tistory.com/83 스크롤시 자꾸사진이 겹쳐져서 */
 }
+
+.horizontal-line {
+    width: 100%;
+    height: 10px;
+    background-color:black;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 
 .nav-wrapper {
     width: 100%;
@@ -49,7 +65,7 @@ body {
     height: 100%;
     /* margin-top: 15px;
     margin-bottom: 5px; */
-
+   
 
 }
 
@@ -79,9 +95,9 @@ body {
     /* width: 250px; */
     height: 22px;
     /* position: relative;  */
-
-
-
+    
+   
+  
 }
 
 .icon {
@@ -89,7 +105,7 @@ body {
     cursor: pointer;
     margin: 0 10px;
     display: inline-block;
-
+    
 }
 
 .user-profile {
@@ -117,8 +133,8 @@ body {
     grid-template-columns: 60% 40%;
     grid-gap: 30px;
     background-color: aquamarine;
-    /* padding-top: 10px; 
-} 지장이없음 */
+    /* padding-top: 10px; */
+
 
 
 .main {
@@ -144,14 +160,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-top: 1px solid rgb(202, 199, 199);
+    border-top : 1px solid rgb(202, 199, 199);
     padding-top: 20px;
     /* overflow: hidden; */
     /* overflow-x: auto; */
     /* https://nykim.work/86 */
 
 
-
+    
+    
 }
 
 /* .status-wrapper::-webkit-scrollbar {
@@ -196,6 +213,10 @@ body {
     color: rgba(0, 0, 0, 0.5)
 }
 
+
+
+
+
 /* 여기서부터 수민님 css */
 
 .fir_container {
@@ -224,7 +245,7 @@ body {
 
     /* width: max-content; */
     /* 글자 크기에 박스를 맞춰주는것 일단 border가 생김 두껍게..? backgroung칼라넣어서 확인해보면다름*/
-
+    
     /* https://www.daleseo.com/css-width/ */
     /* flex관련문서 : https://heropy.blog/2018/11/24/css-flexible-box/ */
     /* flex and grid 관련 : https://studiomeal.com/archives/197 */
@@ -243,87 +264,78 @@ body {
 
 }
 
-.id {
+.id{
     width: 100%;
-    word-break: break-all;
+    word-break: break-all; 
     /* 칸에 맞춰 줄바꾸기 박스위치에다가 넣어줘야 반영*/
     /* word-spacing: inherit ; */
-
+   
 }
-
-.id>span {
+.id > span {
     font-weight: bold;
     font-size: 20px;
     /* padding-top: 100px;
     margin : 15px 0px 0px 10px; 다 위쪽으로는 커지지가 않아 */
     margin-left: 10px;
 }
-
-.id>button:nth-of-type(1) {
-    margin-left: 70px;
+.id > button:nth-of-type(1) {
+        margin-left: 70px;
 }
-
-.id>button:nth-last-of-type(1) {
+.id > button:nth-last-of-type(1) {
     margin-left: 10px;
 }
-
-.sec_text {
-
+.sec_text{
+    
     margin: 20px 0px 0px 10px;
     font-size: 15px;
     display: block;
 }
 
-.sec_text>th:nth-of-type(even) {
-    padding-right: 40px;
+.sec_text > th:nth-of-type(even){
+    padding-right :40px; 
     /* 테이블 태그라 마진은 소용x 패딩으로 넓혀주기 가능*/
 
-}
-
-.sec_text>th:nth-of-type(odd) {
-    padding-right: 10px;
+} 
+.sec_text > th:nth-of-type(odd){
+    padding-right :10px; 
     /* 테이블 태그라 마진은 소용x 패딩으로 넓혀주기 가능*/
 
-}
-
-.id>p {
+} 
+.id > p {
     font-weight: bold;
-    font-size: 15px;
+    font-size : 15px;
     margin-top: 30px;
     margin-left: 10px;
-
+    
 }
-
 .text2 {
     margin-left: 10px;
     /* margin-top: 5px; */
 }
 
-.follower_box {
+.follower_box{
     /* background-color: pink; */
     width: 500px;
     height: 250px;
-    display: inline-block;
-
-
+    display:inline-block; 
+    
+   
     /* border: 2px solid #dfdfdf; */
-    margin: 30px 150px auto auto;
+    margin : 30px 150px auto auto;
     padding-top: 5px;
 }
-
-.posting_box {
+.posting_box{
     width: 980px;
     height: 900px;
     margin: 0px 10px 0px auto;
     /* box-shadow: 0px 0px 3px 0px; */
     /* border: 2px solid #dfdfdf; */
     /* background-color: aqua; */
-
+    
 }
-
 .wholewrap {
-    width: 980px;
-    height: 2000ps;
+    width : 980px;
+    height : 2000ps;
     margin: 0px auto 0px auto;
     /* border: 3px solid #fff; */
     /* background-color: firebrick; */
@@ -332,9 +344,8 @@ body {
     /* justify-content: center; */
     /* justify-content: space-evenly */
 }
-
-.profile_back img {
-
+.profile_back img{
+   
     /* height: 150px;
     width: 150px; */
     width: 95%;
@@ -345,12 +356,12 @@ body {
     border: 3px solid #fff;
     position: absolute;
     justify-content: space-evenly;
-
-
+    
+    
 }
 
 .profile_back {
-    z-index: 0;
+   z-index: 0;
     /* height: 160px;
     width: 160px; */
     width: 100%;
@@ -366,13 +377,12 @@ body {
     /* padding: 3px; */
     background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
 }
-
-.profile_status {
+.profile_status{
     /* flex: 0 0 auto; */
-    float: left;
+    float:left;
     width: 180px;
     height: 180px;
-    margin: auto auto auto 40px;
+    margin: auto auto auto 40px ;
     /* background-color: green; */
     /* padding : 10px */
     /* background-color: aquamarine; */
@@ -420,20 +430,12 @@ input.img-button {
     width: 23px;
     height: 23px;
     border: none;
-}
+  }
 
-input.commentbtn {
+  input.commentbtn {
     background: url("img/comment.PNG") no-repeat;
     background-size: contain;
     width: 23px;
     height: 23px;
     border: none;
-}
-
-input.savebtn {
-    background: url("img/save.PNG") no-repeat;
-    background-size: contain;
-    width: 23px;
-    height: 23px;
-    border: none;
-}
+  }
