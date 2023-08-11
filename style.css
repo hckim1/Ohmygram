@@ -396,6 +396,7 @@ body {
 
 .card-img-top {
     width: 288px;
+    height: 288px;
     cursor: pointer;
     /* 커서를 올리면 마우스 포인터가 손가락 모양으로 바뀜 */
 }
