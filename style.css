@@ -284,3 +284,21 @@ body {
     cursor: pointer;
     /* 커서를 올리면 마우스 포인터가 손가락 모양으로 바뀜 */
 }
+
+input.img-button {
+    background: url("img/like.PNG") no-repeat;
+    background-size: contain;
+    /* background-size: cover; 지정한 요소를 다 덮도록 배경이미지를 확대/축소 
+       background-size: contain; 지정한 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소*/
+    width: 23px;
+    height: 23px;
+    border: none;
+  }
+
+  input.commentbtn {
+    background: url("img/comment.PNG") no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    border: none;
+  }
